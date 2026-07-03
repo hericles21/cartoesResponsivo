@@ -1,8 +1,8 @@
-.caixa-cartoes{
+#caixa-cartoes{
     display: flex;
     justify-content: space-evenly;
+    margin-top: 100px;
 }
-
 
 .caixote{
 
@@ -13,6 +13,7 @@
     align-items: center;
     border: 2px solid black;
     border-radius: 15px;
+    box-shadow: 2px 2px 5px 10px #8888;
 }
 
 .caixote img{
@@ -38,5 +39,22 @@ h2{
 button{
     padding: 10px;
     border-radius: 15px;
-    background-color: blueviolet
+    background-color: rgb(219, 202, 252)
+}
+
+header{
+    position: absolute;
+    top: 0%;
+    width: 100%;
+    background-color: rgb(219, 202, 252);
+    text-align: center;
+}
+
+
+footer{
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    background-color: rgba(148, 32, 32, 0);
+    text-align: center;
 }
