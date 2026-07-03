@@ -1,27 +1,30 @@
-const botao1 = document.getElementById("botao");
-const botao2 = document.getElementById("botao");
-const botao3 = document.getElementById("botao");
-const botao4 = document.getElementById("botao");
-const botao5 = document.getElementById("botao");
+const botao1 = document.getElementById("botao1");
+const botao2 = document.getElementById("botao2");
+const botao3 = document.getElementById("botao3");
+const botao4 = document.getElementById("botao4");
+const botao5 = document.getElementById("botao5");
 
 const caixa = document.getElementById("caixa-cartoes");
 
-botao1.addEventListener('click', () => {
-    alert("aaaaaaaaaaaaaaaaaaaaaaaa";)
-});
+const botao = document.getElementById('meuBotao');
 
-botao2.addEventListener('click', () => {
-    alert("aaaaaaaaaaaaaaaaaaaaaaaa";)
-});
+const botao = document.getElementById('meuBotao');
 
-botao3.addEventListener('click', () => {
-    alert("aaaaaaaaaaaaaaaaaaaaaaaa";)
-});
+botao1.addEventListener('click', function(e) {
+  const rect = botao.getBoundingClientRect();
+  
+  
+  const x = e.clientX - rect.left;
+  const y = e.clientY - rect.top;
 
-botao4.addEventListener('click', () => {
-    alert("aaaaaaaaaaaaaaaaaaaaaaaa";)
-});
+  const onda = document.createElement('span');
+  onda.classList.add('onda');
+  onda.style.left = x + 'px';
+  onda.style.top = y + 'px';
 
-botao5.addEventListener('click', () => {
-    alert("aaaaaaaaaaaaaaaaaaaaaaaa";)
+  this.appendChild(onda);
+
+  setTimeout(() => {
+    onda.remove();
+  }, 600);
 });
